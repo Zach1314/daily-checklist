@@ -1,15 +1,15 @@
-# Daily Checklist
+# 每日清单
 
-A lightweight Windows desktop widget that shows your recurring daily work checklist in a translucent floating window.
+一个轻量的 Windows 桌面挂件，用半透明小窗显示每天重复的工作清单。
 
-Double-click `DailyChecklist.exe` in this folder and the widget appears in the top-right corner of your primary screen. Drag the title bar to move it; the position is restored the next time you open it.
+双击同目录的「DailyChecklist.exe」，挂件会出现在主屏幕右上方。拖动标题区可以移动它，位置会在下次打开时恢复。
 
-- Click **编辑清单** (Edit List), type one recurring task per line, then click **保存清单** (Save List). While editing you can also press Ctrl+S to save or Esc to cancel.
-- Click a task to check it off; click again to uncheck. Checked states persist if you close and reopen the widget on the same day.
-- At local midnight all items reset to unchecked. If the PC was off or asleep, the reset happens on the next launch or wake.
-- Drag the widget where you like, then click **⋯** in the top-right corner and choose **锁定位置** (Lock Position). Once locked it can no longer be dragged, and the position and lock state are restored after a restart. Click **锁定位置** again to unlock.
-- The **⋯** menu also adjusts background opacity, toggles always-on-top, and closes the widget. If the window gets buried, double-click the program again to bring it back.
+- 点「编辑清单」，每行写一项要重复的工作，再点「保存清单」。编辑时也可以按 Ctrl+S 保存，按 Esc 取消。
+- 点击任务可勾选，再点一次可取消。当天关闭再打开，勾选会保留。
+- 到电脑本地时间的次日零点，所有项目恢复为待办。电脑关机或休眠时，会在下次打开或唤醒后刷新。
+- 把挂件拖到合适的位置后，点右上角「⋯」→「锁定位置」。锁定后无法拖动，关闭重开时会恢复位置和锁定状态。再次点击「锁定位置」即可解锁。
+- 右上角「⋯」可调整背景透明度、设置置顶或关闭挂件。如果窗口被盖住，再双击程序即可找回。
 
-The program is portable and runs as a normal desktop window. Always-on-top is off by default. The checklist and settings are stored in `%LOCALAPPDATA%\DailyChecklistWidget\checklist.json`.
+程序免安装，按普通桌面窗口运行。默认关闭置顶。清单和设置保存在 %LOCALAPPDATA%\DailyChecklistWidget\checklist.json。
 
-To rebuild from source, run `./source/build.ps1` in PowerShell 7. The build uses the .NET Framework tools that ship with Windows.
+如需重新编译，在 PowerShell 7 中运行 ./source/build.ps1。编译使用 Windows 自带的 .NET Framework 工具。
